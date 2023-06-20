@@ -215,7 +215,7 @@ a {
     overflow-y: auto;
 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 24px;
 
     padding: 24px;
@@ -223,10 +223,6 @@ a {
 
 .main .title {
     font-size: 24px;
-}
-
-.main-left {
-
 }
 
 .projects-container {
@@ -265,7 +261,7 @@ a {
 .project-container {
     display: flex;
     
-    padding: 24px;
+    padding: 48px 24px;
 }
 
 .project-container .project-title {
@@ -294,5 +290,78 @@ a {
 }
 
 .main-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
+.announcements,
+.trending {
+    background-color: white;
+    padding: 24px 36px;
+    border-radius: 8px;
+}
+
+.announcements-container,
+.trending-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 2rem;
+    height: 100%;
+}
+
+.announcements hr {
+    border-top: 1px solid #bdc3c7;
+}
+
+.announcement {
+    margin: 12px 0; 
+}
+
+.announcement .title {
+    font-size: 18px;
+}
+
+.announcement .announcement-description {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending .profile {
+    width: 80%;
+    margin: 12px 0;
+    display: grid;
+    grid-template-columns: 54px auto;
+    align-items: center;
+    gap: 8px;
+}
+
+.trending .profile .trending-pfp {
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.trending .profile .profile-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 4px;
+}
+
+.profile-info .tag {
+    font-weight: bold;
+}
+
+.profile-info .name {
+    color: #7f8c8d;
 }
