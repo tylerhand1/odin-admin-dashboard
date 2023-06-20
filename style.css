@@ -195,8 +195,13 @@ a {
     border-radius: 36px;
     height: 54px;
     width: 136px;
+    cursor: pointer;
 
     font-size: 24px;
+}
+
+.header-btns button:hover {
+    background-color: #3498db;
 }
 
 /* Main content */
@@ -204,4 +209,5 @@ a {
 .main {
     grid-column: 2;
     background-color: #ecf0f1;
+    overflow-y: auto;
 }
