@@ -113,6 +113,9 @@ a {
     grid-template-rows: 1fr 1fr;
 
     padding: 16px 48px;
+
+    position: relative;
+    box-shadow: 2px 5px 4px -4px #bdc3c7;
 }
 
 .searchbar-container {
@@ -210,4 +213,15 @@ a {
     grid-column: 2;
     background-color: #ecf0f1;
     overflow-y: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.main-left {
+
+}
+
+.main-right {
+
 }
